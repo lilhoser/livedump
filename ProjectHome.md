@@ -1,0 +1,1 @@
+This user mode application leverages features in NtSystemDebugControl and the underlying crash dump infrastructure to generate dump files.
