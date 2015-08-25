@@ -62,10 +62,10 @@ typedef struct _SYSDBG_LIVEDUMP_CONTROL
 {
    ULONG Version;
    ULONG BugCheckCode;
-   ULONG BugCheckParam1;
-   ULONG BugCheckParam2;
-   ULONG BugCheckParam3;
-   ULONG BugCheckParam4;
+   ULONG_PTR BugCheckParam1;
+   ULONG_PTR BugCheckParam2;
+   ULONG_PTR BugCheckParam3;
+   ULONG_PTR BugCheckParam4;
    PVOID DumpFileHandle;
    PVOID CancelEventHandle;
    SYSDBG_LIVEDUMP_CONTROL_FLAGS Flags;

@@ -536,8 +536,8 @@ CreateKernelDump (
     ULONG returnLength;
 
     printf("Attempting to create a kernel dump with flags %08x and pages %08x...\n",
-           Flags,
-           Pages);
+           Flags.AsUlong,
+           Pages.AsUlong);
     printf("Please be patient, this could take a minute or two...\n");
 
     memset(&liveDumpControl, 0, sizeof(liveDumpControl));
